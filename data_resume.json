@@ -45,29 +45,24 @@
     },
     "education" : [
         {
-            "diploma" : "", 
-            "location" : "",
-            "year" : ""
+            "diploma" : "Post-Graduate Degree in Multimedia", 
+            "location" : "University of Technology of Reims, France",
+            "year" : "2014"
         },
         {
-            "diploma" : "", 
-            "location" : "",
-            "year" : ""
+            "diploma" : "English as a Second Language", 
+            "location" : "Harvard Extension School, Cambridge, MA, USA",
+            "year" : "Jan. - Apr. 2012"
         },
         {
-            "diploma" : "", 
-            "location" : "",
-            "year" : ""
+            "diploma" : "University Degree in Computer Sciences", 
+            "location" : "University of Technology of Amiens, France",
+            "year" : "2011"
         },
         {
-            "diploma" : "", 
-            "location" : "",
-            "year" : ""
-        },
-        {
-            "diploma" : "", 
-            "location" : "",
-            "year" : ""
+            "diploma" : "High School Diploma in Science of Engineering", 
+            "location" : "High School of Albert, France",
+            "year" : "2009"
         }
     ],
     "workXP" : [
