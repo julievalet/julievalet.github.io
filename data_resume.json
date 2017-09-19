@@ -1,5 +1,101 @@
 {
-    "firstname" : "Julie",
-    "lastname" : "Valet",
-    "pathPicture" : ""
+    "info" : {    
+        "firstname" : "Julie",
+        "lastname" : "Valet",
+        "pathPicture" : "",
+        "title" : "Web Application Developer",
+        "location" : "Montreal, Canada",
+        "email" : "julie.valet@gmail.com",
+        "links" : [
+            {"icon" : "", "link" : "http://youtube.com/julietv13"},
+            {"icon" : "", "link" : "https://www.linkedin.com/in/julie-valet-25a8155b/"},
+            {"icon" : "", "link" : "https://github.com/julievalet"}
+        ]
+    },
+    "skills" : {
+        "languages" : [
+            {"lang" : "French", "level" : "native"},
+            {"lang" : "English", "level" : "fluent"}
+        ],
+        "dev" : {
+            "frontEnd" : [
+                {"name" : "AngularJS", "level" : ""},
+                //{"name" : "ReactJS", "level" : ""},
+                {"name" : "jQuery", "level" : ""},
+                {"name" : "HTML5", "level" : ""},
+                {"name" : "CSS3", "level" : ""},
+                {"name" : "Bootstrap", "level" : ""},
+                {"name" : "Material", "level" : ""}
+            ],
+            "backEnd" : [
+                //{"name" : "NodeJS", "level" : ""},
+                {"name" : "PHP", "level" : ""},
+                {"name" : "MySQL", "level" : ""}
+            ],
+            "tech" : [
+                {"name" : "JSON", "level" : ""},
+                {"name" : "ChartJS", "level" : ""},
+                {"name" : "Google Charts", "level" : ""},
+                {"name" : "jQPlot", "level" : ""},
+                {"name" : "DataTable", "level" : ""},
+                {"name" : "Git", "level" : ""}
+            ]
+        }
+    },
+    "education" : [
+        {
+            "diploma" : "", 
+            "location" : "",
+            "year" : ""
+        },
+        {
+            "diploma" : "", 
+            "location" : "",
+            "year" : ""
+        },
+        {
+            "diploma" : "", 
+            "location" : "",
+            "year" : ""
+        },
+        {
+            "diploma" : "", 
+            "location" : "",
+            "year" : ""
+        },
+        {
+            "diploma" : "", 
+            "location" : "",
+            "year" : ""
+        }
+    ],
+    "workXP" : [
+        {
+            "title" : "",
+            "companyName" : "",
+            "location" : "",
+            "desc" : []
+        },
+        {
+            "title" : "",
+            "companyName" : "",
+            "location" : "",
+            "desc" : []
+        },
+        {
+            "title" : "",
+            "companyName" : "",
+            "location" : "",
+            "desc" : []
+        },
+        {
+            "title" : "",
+            "companyName" : "",
+            "location" : "",
+            "desc" : []
+        }
+    ],
+    "hobbys" : [
+
+    ]
 }
