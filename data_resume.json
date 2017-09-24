@@ -10,7 +10,8 @@
             {"icon" : "youtube-play", "link" : "http://youtube.com/julietv13"},
             {"icon" : "linkedin-square", "link" : "https://www.linkedin.com/in/julie-valet-25a8155b/"},
             {"icon" : "github", "link" : "https://github.com/julievalet"}
-        ]
+        ],
+        "available" : "Right away"
     },
     "skills" : {
         "languages" : [

@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+body::after {
+    content: "";
+    background: url('https://huckberry.imgix.net/uploads/Huckberry_Yosemite_Fall_Guide_Turley_7.jpg') no-repeat center center;
+    background-size:cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: grayscale(1);
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding: 10px 0;
+    color: #FFFFFF;
+}
+
+nav > ul {
+    list-style: none;
+    
+}
+
+.menu {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu > .item {
+    order: 1;
+    flex-grow: 1;
+    flex-direction: row;
+    font-variant-caps: all-small-caps;
+}
+
+.menu > .item-logo {
+    flex-grow: 3;
+}
