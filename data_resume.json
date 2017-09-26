@@ -21,15 +21,15 @@
         "dev" : {
             "frontEnd" : [
                 {"name" : "AngularJS", "level" : [1,1,1,0,0], "time" : "1+ years"},
-                //{"name" : "ReactJS", "level" : "", "time" : "1+ years"},
+                {"name" : "ReactJS", "level" : "", "time" : "< 6 months"},
                 {"name" : "jQuery", "level" : [1,1,1,1,0], "time" : "3+ years"},
                 {"name" : "HTML5", "level" : [1,1,1,1,1], "time" : "3+ years"},
                 {"name" : "CSS3", "level" : [1,1,1,1,0], "time" : "3+ years"},
                 {"name" : "Bootstrap", "level" : [1,1,1,1,0], "time" : "2+ years"},
-                {"name" : "Material", "level" : [1,1,0,0,0], "time" : "<1 year"}
+                {"name" : "Material", "level" : [1,1,0,0,0], "time" : "< 1 year"}
             ],
             "backEnd" : [
-                //{"name" : "NodeJS", "level" : "", "time" : "1+ years"},
+                {"name" : "NodeJS", "level" : "", "time" : "< 6 months"},
                 {"name" : "PHP", "level" : [1,1,1,1,1], "time" : "4+ years"},
                 {"name" : "MySQL", "level" : [1,1,1,1,1], "time" : "4+ years"}
             ],

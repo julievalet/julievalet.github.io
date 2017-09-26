@@ -2,6 +2,8 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body {
@@ -60,8 +62,10 @@ nav > ul {
     flex-grow: 1;
     flex-direction: row;
     font-variant-caps: all-small-caps;
+    text-align: center;
 }
 
 .menu > .item-logo {
     flex-grow: 3;
+    text-align: left;
 }
