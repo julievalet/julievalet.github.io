@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    font-size: 14px;
+    font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -39,6 +39,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     color: #FFFFFF;
+    font-size: 0.6em;
 }
 
 nav > ul {
