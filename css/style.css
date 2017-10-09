@@ -14,7 +14,7 @@ body {
 }
 body::after {
     content: "";
-    background: url('https://huckberry.imgix.net/uploads/Huckberry_Yosemite_Fall_Guide_Turley_7.jpg') no-repeat center center;
+    background: url('https://source.unsplash.com/8peGuud5cEw') no-repeat center center;
     background-size:cover;
     opacity: 0.5;
     top: 0;
