@@ -4379,6 +4379,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_App__["a" /* App */], null), document.getElementById('app'));
 
+// const resumeJSONPath = "./data_resume.json";
+
+// let resume = {};
+// fetch(resumeJSONPath)
+//     .then(blob => blob.json())
+//     .then(data => resume = data);
+
 /***/ }),
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -24611,7 +24618,7 @@ var App = function (_React$Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'h1',
                 null,
-                'Hello World !!!'
+                'Hello World !!!!'
             );
         }
     }]);

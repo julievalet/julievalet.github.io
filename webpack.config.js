@@ -5,26 +5,6 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
     inject: 'body'
 });
 
-// module.exports = {
-//     entry: {
-//         filename: __dirname + '/app/index.js',
-//     },
-//     module: {
-//         loaders: [
-//             {
-//                 test: /\.js[x]?$/,
-//                 exclude: /node_modules/,
-//                 loader: 'babel-loader'
-//             }
-//         ]
-//     },
-//     output: {
-//         filename: 'transformed.js',
-//         path: __dirname + '/build'
-//     },
-//     plugins: [HTMLWebpackPluginConfig]
-// };
-
 const webpack = require('webpack');
 const nodeEnv = process.env.NODE_ENV || 'production';
 
