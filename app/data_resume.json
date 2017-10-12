@@ -8,7 +8,7 @@
         "email" : "julie.valet@gmail.com",
         "links" : [
             {"icon" : "youtube-play", "link" : "http://youtube.com/julietv13"},
-            {"icon" : "linkedin-square", "link" : "https://www.linkedin.com/in/julie-valet-25a8155b/"},
+            {"icon" : "linkedin-square", "link" : "https://www.linkedin.com/in/julie-valet-webdev/"},
             {"icon" : "github", "link" : "https://github.com/julievalet"}
         ],
         "available" : "Right away"
@@ -21,7 +21,7 @@
         "dev" : {
             "frontEnd" : [
                 {"name" : "AngularJS", "level" : [1,1,1,0,0], "time" : "1+ years"},
-                {"name" : "ReactJS", "level" : "", "time" : "< 6 months"},
+                {"name" : "ReactJS", "level" : [1,1,0,0,0], "time" : "< 6 months"},
                 {"name" : "jQuery", "level" : [1,1,1,1,0], "time" : "3+ years"},
                 {"name" : "HTML5", "level" : [1,1,1,1,1], "time" : "3+ years"},
                 {"name" : "CSS3", "level" : [1,1,1,1,0], "time" : "3+ years"},
@@ -29,7 +29,7 @@
                 {"name" : "Material", "level" : [1,1,0,0,0], "time" : "< 1 year"}
             ],
             "backEnd" : [
-                {"name" : "NodeJS", "level" : "", "time" : "< 6 months"},
+                {"name" : "NodeJS", "level" : [0,0,0,0,0], "time" : "< 6 months"},
                 {"name" : "PHP", "level" : [1,1,1,1,1], "time" : "4+ years"},
                 {"name" : "MySQL", "level" : [1,1,1,1,1], "time" : "4+ years"}
             ],
