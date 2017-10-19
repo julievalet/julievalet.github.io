@@ -7,21 +7,32 @@ class SkillLevel extends React.Component {
             return star===1 ? <i key={'star-'+index} className="material-icons">star</i> : <i  key={'star-'+index} className="material-icons">star_border</i>;
         });
         return (
-            <li>
+            <span>
                { starMap } 
-            </li>
+            </span>
         );
     }
 }
 export class ListSkillDev extends React.Component {
     render() {
-        const item = this.props.item;
+        const skillType = this.props.skillType;
+        const skills = this.props.skills.map( skill => {
+            return (
+                <li key={ skill.name }>
+                    <span>{ skill.name }</span> 
+                    <SkillLevel level={skill.level}/>
+                    <span>{ skill.time }</span>
+                </li>
+            );
+        });
+
         return (
-            <ul>
-                <li>{ item.name }</li>
-                <SkillLevel level={item.level}/>
-                <li>{ item.time }</li>
-            </ul>
+            <div className="dev-skills" >
+                <h3>{ skillType }</h3>
+                <ul>
+                    { skills }
+                </ul>
+            </div>
         );
     }
 }
