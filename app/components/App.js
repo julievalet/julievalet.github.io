@@ -12,11 +12,16 @@ export class App extends React.Component {
                 return <ListSkillDev skillType={skillType} skills={skillTypes[skillType]} key={skillType} />;
             });
         
-        console.log(listSkills);
+        // console.log(listSkills);
         return (
             <div>
-                <h1>{ resumeData.info.title }</h1>
-                <div>{ listSkills }</div>
+                <div id="intro">
+                    <h2>{ resumeData.info.title }</h2>
+                    <img src={ `app/${resumeData.info.pathPicture}` } alt="pic"/>
+                </div>
+                <div id="about">{ listSkills }</div>
+                <div id="work"></div>
+                <div id="contact"></div>
             </div>
         );
     }

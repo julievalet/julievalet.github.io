@@ -1,17 +1,15 @@
 html, body {
     height: 100%;
+    min-height: 100%;
     width: 100%;
     margin: 0;
     font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
-body {
-    position: absolute;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    min-height: 100%;
+main, #app {
+    height: 100%;
 }
+
 body::after {
     content: "";
     background: url('https://source.unsplash.com/8peGuud5cEw') no-repeat center center;
@@ -40,6 +38,14 @@ footer {
     padding: 10px 0;
     color: #FFFFFF;
     font-size: 0.6em;
+}
+
+nav {
+    height: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav > ul {
@@ -88,7 +94,44 @@ nav a {
     float: left;
 }
 
-/* Mobile Menu */
+#app > div{
+    height: 100%;
+    overflow-y: auto;
+}
+#app > div > div {
+    border-bottom: solid 1px #fff;
+}
+
+#intro {
+    width: 50%;
+    height: 20em;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 5em;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+#intro > h2 {
+    max-width: 35%;
+    padding-right: 0.5em;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+#intro > img {
+    /* float: right; */
+    max-width: 50%;
+    height: auto;
+    display: block;
+    /* -webkit-filter: grayscale(1); Old WebKit */
+    /* filter: grayscale(1); */
+}
+
+/* Mobile Standards */
 @media (max-width: 1024px){
     
     #menu { 
@@ -129,6 +172,39 @@ nav a {
     ul.open li.item-logo {
         display: none;
     }
+
+    #intro {
+        width: 100%;
+        padding: 0;
+    }
+    #intro > h2 {
+        font-size: 0.95em;
+    }
 }
 
 /*************/
+
+button#scroll-top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #b3b2b2; /* Set a background color */
+    opacity: 0.8;
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 2em; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+button#scroll-top-btn:hover {
+    opacity: 1;
+}
+
+.material-icons { vertical-align: text-bottom; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
