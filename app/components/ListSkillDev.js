@@ -1,6 +1,11 @@
 import React from 'react';
 
-class SkillLevel extends React.Component {
+/**
+ * Star Rating Component
+ * props : level (array with 5 binary elements)
+ * return a rating of 5 stars
+ */
+class StarLevel extends React.Component {
     render() {
         const level = this.props.level;
         const starMap = level.map( (star, index) => {
@@ -13,6 +18,12 @@ class SkillLevel extends React.Component {
         );
     }
 }
+
+/**
+ * List Dev Skills Component
+ * props : skillType (string), skills (array)
+ * return list of li with skill, star rating and time
+ */
 export class ListSkillDev extends React.Component {
     render() {
         const skillType = this.props.skillType;
@@ -20,7 +31,7 @@ export class ListSkillDev extends React.Component {
             return (
                 <li key={ skill.name }>
                     <span>{ skill.name }</span> 
-                    <SkillLevel level={skill.level}/>
+                    <StarLevel level={skill.level}/>
                     <span>{ skill.time }</span>
                 </li>
             );
@@ -32,6 +43,30 @@ export class ListSkillDev extends React.Component {
                 <ul>
                     { skills }
                 </ul>
+            </div>
+        );
+    }
+}
+
+/**
+ * List languages Component
+ * props : languages (array)
+ * return a list of language and the level
+ */
+export class ListSkillLang extends React.Component {
+    render() {
+        const langs = this.props.languages.map( lang => {
+            return (
+                <ul key={ lang.lang } >
+                    <li>{ lang.lang }</li>
+                    <li>{ lang.level }</li>
+                </ul>
+            );
+        });
+
+        return (
+            <div>
+                { langs }
             </div>
         );
     }
