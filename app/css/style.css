@@ -132,8 +132,9 @@ nav a {
     /* filter: grayscale(1); */
 }
 
-.dev-skills h3 {
+.dev-skills h3, .lang-skills h3 {
     font-variant-caps:  petite-caps;
+    font-weight: bold;
 }
 
 /* Mobile Standards */

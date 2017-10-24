@@ -6,6 +6,7 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 const webpack = require('webpack');
+const HMRPlugin = new webpack.HotModuleReplacementPlugin()
 const nodeEnv = process.env.NODE_ENV || 'production';
 
 module.exports = {
@@ -18,6 +19,11 @@ module.exports = {
     filename: 'bundle.js',
     path: __dirname + '/build'
   },
+  devServer: {
+    historyApiFallback: true
+    // hot: true,
+    // inline: true
+  },
   module: {
     loaders: [
       {
@@ -27,5 +33,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HTMLWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig/*, HMRPlugin*/]
 };

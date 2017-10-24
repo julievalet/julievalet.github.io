@@ -55,7 +55,7 @@ export class ListSkillDev extends React.Component {
  */
 export class ListSkillLang extends React.Component {
     render() {
-        const langs = this.props.languages.map( lang => {
+        const langs = this.props.languages.map( (lang, index) => {
             return (
                 <ul key={ lang.lang } >
                     <li>{ lang.lang }</li>
@@ -65,7 +65,8 @@ export class ListSkillLang extends React.Component {
         });
 
         return (
-            <div>
+            <div className="lang-skills">
+                <h3>Languages</h3>
                 { langs }
             </div>
         );
