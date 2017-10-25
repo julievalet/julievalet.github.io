@@ -8,13 +8,19 @@ html, body {
 }
 main, #app, #app > div {
     display: block;
+    width: 100%;
     height: 100%;
 }
 
 main {
-    padding-top: 3em;
+    padding-top: 2em;
+    width: 80%;
     max-width: 80%;
+    height: calc(100% - 3.5em);
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
 }
 
 body::after {
@@ -22,7 +28,7 @@ body::after {
     background: url('https://source.unsplash.com/8peGuud5cEw') no-repeat center center;
     background-size:cover;
     opacity: 0.5;
-    top: 3em;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -39,6 +45,7 @@ a {
 h3 {
     font-variant-caps:  petite-caps;
     font-weight: bold;
+    text-align: center;
 }
 
 footer {
@@ -73,12 +80,12 @@ nav a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
+    flex-direction: row;
 }
 
 #menu > .item {
     order: 1;
     flex-grow: 1;
-    flex-direction: row;
     font-variant-caps: all-small-caps;
     text-align: center;
 }
@@ -107,32 +114,57 @@ nav a {
 }
 
 #intro {
-    /* width: 100%; */
-    height: 20em;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     margin: auto;
-    padding: 0 5em;
+    /* padding: 0 5em; */
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: right;
 }
-#intro > h2 {
-    max-width: 35%;
-    padding-right: 0.5em;
+#intro > div {
+    /* height: 100%; */
+    /* width: 100%; */
+    padding: 0.5em;
+    text-align: center;
+    /* flex: 1; */
+
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+}
+#intro > div > * {
+    flex-grow: 1;
+}
+#intro > div > h2 {
+    max-width: 48%;
+    /* padding-right: 0.5em;
+    margin-top: 14%; */
+    margin: 14% 0.5em 0 0;
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: right;
+    /* flex-grow: 1; */
 }
-#intro > img {
+#intro > div > div.pic {
     /* float: right; */
-    max-width: 50%;
+    /* max-width: 50%; */
     height: auto;
-    display: block;
+    /* display: block; */
+    text-align: left;
+    /* flex-grow: 3; */
     /* -webkit-filter: grayscale(1); Old WebKit */
     /* filter: grayscale(1); */
+}
+#intro > div > div.pic > img {
+    max-width: 100%;
 }
 
 /* Mobile Standards */
@@ -177,20 +209,25 @@ nav a {
         display: none;
     }
 
+    main{
+        width: 100%;
+        max-width: 100%;
+    }
     #intro {
-        /* width: 100%; */
+        width: 100%;
         padding: 0;
     }
-    #intro > h2 {
-        font-size: 0.95em;
+    #intro > div > h2 {
+        font-size: 1.2em;
+        max-width: 58%;
     }
 }
 
-@media (max-width: 500px){
-    #intro > h2 {
+/* @media (max-width: 500px){
+    #intro > div > h2 {
         max-width: initial;
     }
-}
+} */
 
 /*************/
 
