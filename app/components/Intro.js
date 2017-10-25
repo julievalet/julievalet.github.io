@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Display what the user see when he lands on the site (title, pic, location & availability)
+ */
 export class Intro extends React.Component {
     render() {
         return (
