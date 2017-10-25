@@ -4,41 +4,12 @@ import {
     Route,
     Link
   } from 'react-router-dom';
-import { ListSkillDev, ListSkillLang } from './ListSkillDev';
+import { Intro } from './Intro';
+import { About } from './About';
+import { Skills } from './Skills';
+import { Work } from './Work';
+import { Contact } from './Contact';
 
-// Intro
-class Intro extends React.Component {
-    render() {
-        return (
-            <div id="intro">
-                <h2>{ this.props.info.title }</h2>
-                {<img src={ `app/${this.props.info.pathPicture}` } alt="pic"/>}
-           </div>
-        )
-    }
-}
-// ReactDOM.render(intro, document.querySelector('main'));
-
-class Skills extends React.Component {
-    render() {
-        // Dev skills
-        const skillTypes = this.props.skills.dev;
-        const listSkills = Object
-            .keys(skillTypes)
-            .map( skillType => {
-                return <ListSkillDev skillType={skillType} skills={skillTypes[skillType]} key={skillType} />;
-            });
-        // Lang skills
-        const langSkills = <ListSkillLang languages={this.props.skills.languages} key="lang" />;
-        
-        return (
-            <div id="skills">
-                { [langSkills, listSkills] }
-            </div>
-        );
-    }
-}
-// ReactDOM.render(skills, document.querySelector('main'));
 
 export class App extends React.Component {
     render() {
@@ -76,7 +47,10 @@ export class App extends React.Component {
             <Router>
                 <div>
                     <Route exact path="/" render={()=><Intro info={resumeData.info}/>}/>
+                    <Route path="/about" render={()=><About data={resumeData}/>}/>
                     <Route path="/skills" render={()=><Skills skills={resumeData.skills}/>}/>
+                    <Route path="/work" render={()=><Work work={resumeData.workXP}/>}/>
+                    <Route path="/contact" render={()=><Contact info={resumeData.info}/>}/>
                 </div>
             </Router>
         );

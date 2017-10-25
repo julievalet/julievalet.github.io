@@ -17,8 +17,6 @@ main {
     margin: auto;
 }
 
-
-
 body::after {
     content: "";
     background: url('https://source.unsplash.com/8peGuud5cEw') no-repeat center center;
@@ -36,6 +34,11 @@ body::after {
 
 a {
     text-decoration: none;
+}
+
+h3 {
+    font-variant-caps:  petite-caps;
+    font-weight: bold;
 }
 
 footer {
@@ -130,11 +133,6 @@ nav a {
     display: block;
     /* -webkit-filter: grayscale(1); Old WebKit */
     /* filter: grayscale(1); */
-}
-
-.dev-skills h3, .lang-skills h3 {
-    font-variant-caps:  petite-caps;
-    font-weight: bold;
 }
 
 /* Mobile Standards */
