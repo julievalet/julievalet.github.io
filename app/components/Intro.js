@@ -12,7 +12,7 @@ export class Intro extends React.Component {
                     <div className="pic"><img src={ `app/${this.props.info.pathPicture}` } alt="pic"/></div>
                 </div>
                 <div>
-                    { this.props.info.location }<br/>
+                    <i className="material-icons">location_on</i>{ this.props.info.location }<br/>
                     Available : { this.props.info.available }
                 </div>
            </div>
