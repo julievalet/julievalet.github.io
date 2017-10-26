@@ -8,13 +8,16 @@ export class Intro extends React.Component {
         return (
             <div id="intro">
                 <div>
-                    <h2>{ this.props.info.title }</h2>
+                    <div className="title">
+                        <h2>{ this.props.info.title }</h2>
+                        <h4><i className="material-icons">location_on</i>{ this.props.info.location }</h4>
+                    </div>
                     <div className="pic"><img src={ `app/${this.props.info.pathPicture}` } alt="pic"/></div>
                 </div>
-                <div>
+                {/* <div>
                     <i className="material-icons">location_on</i>{ this.props.info.location }<br/>
                     Available : { this.props.info.available }
-                </div>
+                </div> */}
            </div>
         )
     }
