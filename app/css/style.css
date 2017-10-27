@@ -93,6 +93,7 @@ footer ul.social {
 }
 footer ul.social > li {
     margin: 1em 0.5em;
+    text-transform: capitalize;
 }
 
 .btn {
@@ -107,6 +108,9 @@ footer ul.social > li {
 }
 .btn:hover {
     text-decoration: none;
+}
+.btn.btn-linkedin {
+    background: #0084bf;
 }
 .btn.btn-twitter {
     background: #1da1f2;

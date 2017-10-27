@@ -19,6 +19,7 @@ export class Skills extends React.Component {
         
         return (
             <div id="skills">
+                <h3>Skills</h3>
                 { [langSkills, listSkills] }
             </div>
         );

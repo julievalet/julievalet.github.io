@@ -6,10 +6,12 @@
         "title" : "Web Application Developer",
         "location" : "Montreal, Canada",
         "email" : "julie.valet@gmail.com",
-        "links" : [
-            {"icon" : "youtube-play", "link" : "http://youtube.com/julietv13"},
-            {"icon" : "linkedin-square", "link" : "https://www.linkedin.com/in/julie-valet-webdev/"},
-            {"icon" : "github", "link" : "https://github.com/julievalet"}
+        "social" : [
+            {"name" : "linkedin", "link" : "https://www.linkedin.com/in/julie-valet-webdev/"},
+            {"name" : "github", "link" : "https://github.com/julievalet"},
+            {"name" : "twitter", "link" : "https://twitter.com/jvalet13"},
+            {"name" : "youtube", "link" : "https://youtube.com/user/JulieTV13"},
+            {"name" : "instagram", "link" : "https://instagram.com/_u/canyoutraveltheworld/"}
         ],
         "available" : "Right away",
         "about" : ""
