@@ -3,7 +3,7 @@ import React from 'react';
 class Social extends React.Component {
     render() {
         const socials = this.props.social;
-        console.log(socials);
+        // console.log(socials);
         const socialLinks = socials.map( social => <li key={`link-${social.name}`}><a href={social.link} target="_blank" className={`btn btn-${social.name}`}>{social.name}</a></li> );
 
         return (
