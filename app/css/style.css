@@ -219,10 +219,12 @@ nav a:hover {
     flex-direction: row;
 }
 #intro > div > * {
+    flex-basis: 0;
     flex-grow: 1;
 }
 #intro div.title {
-    max-width: 48%;
+    /* max-width: 48%; */
+    /* max-width: 14rem; */
     /* padding-right: 0.5em;
     margin-top: 14%; */
     margin: 1em 0.5em 0 0;
@@ -230,6 +232,9 @@ nav a:hover {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     text-align: right;
     /* flex-grow: 1; */
+}
+#intro div.title > h2 {
+    margin-left: 6em;
 }
 #intro div.pic {
     /* float: right; */
@@ -246,7 +251,7 @@ nav a:hover {
 }
 
 /* Mobile Standards */
-@media (max-width: 1023px){
+@media (max-width: 768px){
     
     #menu { 
         display: none; 
@@ -297,6 +302,7 @@ nav a:hover {
         padding: 0;
     }
     #intro div.title > h2 {
+        /* margin-left: 0; */
         font-size: 1.2em;
     }
     #intro div.title > h4 {
@@ -304,22 +310,30 @@ nav a:hover {
     }
     #intro div.title > h4 > i {
         vertical-align: bottom;
+        font-size: 1.1em;
     }
     #intro div.title {
-        max-width: 58%;
+        /* max-width: 58%; */
+        /* max-width: 12rem; */
     }
 }
-
-@media (max-width: 500px){
-    /* #intro > div > h2 {
-        max-width: initial;
-    } */
-
+@media (max-width: 480px){
+    #intro > div {
+        padding: 0;
+    }
+    #intro div.title > h2 {
+        margin-left: 0;
+    }
     footer ul.social {
         flex-direction: column;
     }
 }
 
+@media (max-width: 400px){
+    #intro div.title {
+        margin-top: -1em;
+    }
+}
 /*************/
 
 button#scroll-top-btn {
