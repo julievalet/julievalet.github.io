@@ -199,7 +199,7 @@ nav a:hover {
 }
 #intro > div {
     padding: 0.5em;
-    text-align: center;
+    /* text-align: center; */
 
     display: flex;
     display: -webkit-box;
@@ -208,17 +208,28 @@ nav a:hover {
     flex-direction: row;
 }
 #intro > div > * {
-    flex-basis: 0;
-    flex-grow: 1;
+    flex: 1 1;
 }
 #intro div.title {
-    margin: 1em 0.5em 0 0;
+    padding: 1em 0.5em 0 0;
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
 }
-#intro div.title > h2 {
-    margin-left: 6em;
+#intro div.title > * {
+    flex: 1 1;
+    /* border: 1px solid goldenrod; */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#intro div.title > span.location {
+    flex: 2;
+    font-size: 1em;
+    padding-top: 2em;
 }
 #intro div.pic {
     height: auto;
@@ -296,13 +307,13 @@ nav a:hover {
         width: 100%;
         padding: 0;
     }
-    #intro div.title > h2 {
+    #intro div.title > * {
         font-size: 1.2em;
     }
-    #intro div.title > h4 {
+    #intro div.title > span.location {
         font-size: 0.7em;
     }
-    #intro div.title > h4 > i {
+    #intro div.title > span.location > i {
         vertical-align: bottom;
         font-size: 1.1em;
     }
@@ -311,17 +322,8 @@ nav a:hover {
     #intro > div {
         padding: 0;
     }
-    #intro div.title > h2 {
-        margin-left: 0;
-    }
     footer ul.social {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 400px){
-    #intro div.title {
-        margin-top: -1em;
     }
 }
 /*************/

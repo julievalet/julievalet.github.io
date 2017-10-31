@@ -5,12 +5,13 @@ import React from 'react';
  */
 export class Intro extends React.Component {
     render() {
+        const title = this.props.info.title.split(' ').map((t, i) => <span key={i}>{t}</span>);
         return (
             <div id="intro">
                 <div>
                     <div className="title">
-                        <h2>{ this.props.info.title }</h2>
-                        <h4><i className="material-icons">location_on</i>{ this.props.info.location }</h4>
+                        { title }
+                        <span className="location"><i className="material-icons">location_on</i>{ this.props.info.location }</span>
                     </div>
                     <div className="pic"><img src={ `app/${this.props.info.pathPicture}` } alt="pic"/></div>
                 </div>
