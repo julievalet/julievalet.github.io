@@ -43,7 +43,8 @@
                 {"name" : "Google Charts", "level" : [1,1,1,1,0], "time" : "2+ years"},
                 {"name" : "jQPlot", "level" : [1,1,1,1,0], "time" : "2+ years"},
                 {"name" : "DataTable", "level" : [1,1,1,0,0], "time" : "3+ years"},
-                {"name" : "Git", "level" : [1,1,1,0,0], "time" : "<1 year"}
+                {"name" : "Git", "level" : [1,1,1,0,0], "time" : "< 1 year"},
+                {"name" : "Gulp", "level" : [1,0,0,0,0], "time" : "< 6 months"}
             ]
         }
     },
