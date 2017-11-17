@@ -69,7 +69,7 @@ footer {
     font-size: 0.6em;
 }
 
-footer ul.social {
+footer .social {
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
@@ -83,7 +83,7 @@ footer ul.social {
     padding: 0;
     text-align: center;
 }
-footer ul.social > li {
+footer .social > li {
     margin: 1em 0.5em;
     text-transform: capitalize;
 }

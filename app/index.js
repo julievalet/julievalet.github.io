@@ -29,11 +29,8 @@ const btnScrollTop = document.querySelector('#scroll-top-btn');
 
 /* Functions */
 function toggleMenu() {
-    if (menu.classList.contains('open')) {
-        menu.classList.remove('open');
-    } else {
-        menu.classList.add('open');
-    }
+    //Toggle the class 'open', open/close the menu on mobile
+    menu.classList.toggle('open');
 
     // Calculate where the botton of anchorMenu is located
     const anchorBottom = anchorMenu.offsetHeight + anchorMenu.offsetTop + 3;
