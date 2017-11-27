@@ -70,6 +70,53 @@
             "year" : "2009"
         }
     ],
+    "onlineCourses" : [
+        {
+            "name" : "ES6 for Everyone",
+            "author" : "Wes Bos",
+            "url" : "https://es6.io"
+        },
+        {
+            "name" : "Learn ReactJS: Part I & II",
+            "author" : "Wes Bos",
+            "url" : "https://www.codecademy.com/learn/react-101"
+        },
+        {
+            "name" : "React For Beginners",
+            "author" : "Wes Bos",
+            "url" : "https://reactforbeginners.com/"
+        },
+        {
+            "name" : "Learn Redux",
+            "author" : "Wes Bos",
+            "url" : "https://learnredux.com/"
+        },
+        {
+            "name" : "Learn Node",
+            "author" : "Wes Bos",
+            "url" : "https://learnnode.com/"
+        },
+        {
+            "name" : "Javascript30",
+            "author" : "Wes Bos",
+            "url" : "https://javascript30.com"
+        },
+        {
+            "name" : "What the Flexbox?!",
+            "author" : "Wes Bos",
+            "url" : "https://flexbox.io"
+        },
+        {
+            "name" : "Git",
+            "author" : "CodeSchool",
+            "url" : "https://www.codeschool.com/learn/git"
+        },
+        {
+            "name" : "Shaping Up With AngularJS",
+            "author" : "CodeSchool",
+            "url" : "https://www.codeschool.com/courses/shaping-up-with-angularjs"
+        }
+    ],
     "workXP" : [
         {
             "title" : "Web Application Developer",

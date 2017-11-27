@@ -8,12 +8,10 @@ import React from 'react';
 class StarLevel extends React.Component {
     render() {
         const level = this.props.level;
-        const starMap = level.map( (star, index) => {
-            return star===1 ? <i key={'star-'+index} className="material-icons">star</i> : <i  key={'star-'+index} className="material-icons">star_border</i>;
-        });
+        const starMap = level.map((star, index) => (star === 1 ? <i key={'star-' + index} className="material-icons">star</i> : <i key={'star-' + index} className="material-icons">star_border</i>));
         return (
             <span>
-               { starMap } 
+                { starMap }
             </span>
         );
     }
@@ -27,15 +25,13 @@ class StarLevel extends React.Component {
 export class ListSkillDev extends React.Component {
     render() {
         const skillType = this.props.skillType;
-        const skills = this.props.skills.map( skill => {
-            return (
-                <li key={ skill.name }>
-                    <span>{ skill.name }</span> 
-                    <StarLevel level={skill.level}/>
-                    <span>{ skill.time }</span>
-                </li>
-            );
-        });
+        const skills = this.props.skills.map(skill => (
+            <li key={skill.name}>
+                <span>{ skill.name }</span>
+                <StarLevel level={skill.level} />
+                <span>{ skill.time }</span>
+            </li>
+        ));
 
         return (
             <div className="dev-skills" >
@@ -55,14 +51,12 @@ export class ListSkillDev extends React.Component {
  */
 export class ListSkillLang extends React.Component {
     render() {
-        const langs = this.props.languages.map( (lang, index) => {
-            return (
-                <ul key={ lang.lang } >
-                    <li>{ lang.lang }</li>
-                    <li>{ lang.level }</li>
-                </ul>
-            );
-        });
+        const langs = this.props.languages.map(lang => (
+            <ul key={lang.lang}>
+                <li>{ lang.lang }</li>
+                <li>{ lang.level }</li>
+            </ul>
+        ));
 
         return (
             <div className="lang-skills">

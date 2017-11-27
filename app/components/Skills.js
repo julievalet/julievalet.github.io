@@ -11,12 +11,10 @@ export class Skills extends React.Component {
         const skillTypes = this.props.skills.dev;
         const listSkills = Object
             .keys(skillTypes)
-            .map( skillType => {
-                return <ListSkillDev skillType={skillType} skills={skillTypes[skillType]} key={skillType} />;
-            });
+            .map(skillType => <ListSkillDev skillType={skillType} skills={skillTypes[skillType]} key={skillType} />);
         // Lang skills
         const langSkills = <ListSkillLang languages={this.props.skills.languages} key="lang" />;
-        
+
         return (
             <div id="skills">
                 <h3>Skills</h3>

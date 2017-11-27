@@ -5,22 +5,22 @@ import { Footer } from './components/Footer';
 // import { ListSkillDev, ListSkillLang } from './components/ListSkillDev';
 
 
-
 // Get the resume's data (JSON)
-const resumeJSONPath = "./app/data_resume.json";
+const resumeJSONPath = './app/data_resume.json';
 // Render only when the data has been fetched
 fetch(resumeJSONPath)
     .then(blob => blob.json())
-    .then(function(data) {
+    .then(data => {
         // console.log(data);
         ReactDOM.render(<App resumeData={data} />, document.getElementById('app'));
 
         ReactDOM.render(<Footer info={data.info} />, document.querySelector('footer'));
-    });
+    })
+    .catch(err => console.error(err));
 
-/*****************************************************************************/
-/*****************************************************************************/
-/*****************************************************************************/
+/* *************************************************************************** */
+/* *************************************************************************** */
+/* *************************************************************************** */
 
 /* Variables */
 const menu = document.querySelector('#menu');
@@ -29,7 +29,7 @@ const btnScrollTop = document.querySelector('#scroll-top-btn');
 
 /* Functions */
 function toggleMenu() {
-    //Toggle the class 'open', open/close the menu on mobile
+    // Toggle the class 'open', open/close the menu on mobile
     menu.classList.toggle('open');
 
     // Calculate where the botton of anchorMenu is located
@@ -40,15 +40,15 @@ function toggleMenu() {
 
 // When the user clicks on the button, scroll to the top of the document
 function scrollToTop() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
 
 function handleScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        btnScrollTop.style.display = "block";
+        btnScrollTop.style.display = 'block';
     } else {
-        btnScrollTop.style.display = "none";
+        btnScrollTop.style.display = 'none';
     }
 }
 
