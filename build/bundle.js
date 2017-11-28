@@ -2565,7 +2565,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 // Get the resume's data (JSON)
-var resumeJSONPath = "./app/data_resume.json";
+var resumeJSONPath = './app/data_resume.json';
 // Render only when the data has been fetched
 fetch(resumeJSONPath).then(function (blob) {
     return blob.json();
@@ -2574,11 +2574,13 @@ fetch(resumeJSONPath).then(function (blob) {
     __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_App__["a" /* App */], { resumeData: data }), document.getElementById('app'));
 
     __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Footer__["a" /* Footer */], { info: data.info }), document.querySelector('footer'));
+}).catch(function (err) {
+    return console.error(err);
 });
 
-/*****************************************************************************/
-/*****************************************************************************/
-/*****************************************************************************/
+/* *************************************************************************** */
+/* *************************************************************************** */
+/* *************************************************************************** */
 
 /* Variables */
 var menu = document.querySelector('#menu');
@@ -2587,11 +2589,8 @@ var btnScrollTop = document.querySelector('#scroll-top-btn');
 
 /* Functions */
 function toggleMenu() {
-    if (menu.classList.contains('open')) {
-        menu.classList.remove('open');
-    } else {
-        menu.classList.add('open');
-    }
+    // Toggle the class 'open', open/close the menu on mobile
+    menu.classList.toggle('open');
 
     // Calculate where the botton of anchorMenu is located
     var anchorBottom = anchorMenu.offsetHeight + anchorMenu.offsetTop + 3;
@@ -2601,15 +2600,15 @@ function toggleMenu() {
 
 // When the user clicks on the button, scroll to the top of the document
 function scrollToTop() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
 
 function handleScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        btnScrollTop.style.display = "block";
+        btnScrollTop.style.display = 'block';
     } else {
-        btnScrollTop.style.display = "none";
+        btnScrollTop.style.display = 'none';
     }
 }
 
@@ -26363,7 +26362,7 @@ var ListSkillLang = function (_React$Component3) {
     _createClass(ListSkillLang, [{
         key: 'render',
         value: function render() {
-            var langs = this.props.languages.map(function (lang, index) {
+            var langs = this.props.languages.map(function (lang) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'ul',
                     { key: lang.lang },

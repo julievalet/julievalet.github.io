@@ -1,6 +1,13 @@
 {
     "presets": [
-        ["env", {"modules": false}],
+        ["env", 
+            {
+                "targets": {
+                    "browers": ["last 2 versions, safari >= 7"]
+                },
+                "modules": false
+            }
+        ],
         "react"
     ] 
 }
