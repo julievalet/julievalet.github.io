@@ -2563,7 +2563,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // import { ListSkillDev, ListSkillLang } from './components/ListSkillDev';
 
-
 // Get the resume's data (JSON)
 var resumeJSONPath = './app/data_resume.json';
 // Render only when the data has been fetched
@@ -26309,16 +26308,20 @@ var ListSkillDev = function (_React$Component2) {
             var skillType = this.props.skillType;
             var skills = this.props.skills.map(function (skill) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
+                    'tr',
                     { key: skill.name },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'span',
+                        'td',
                         null,
                         skill.name
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(StarLevel, { level: skill.level }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'span',
+                        'td',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(StarLevel, { level: skill.level })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'td',
                         null,
                         skill.time
                     )
@@ -26329,14 +26332,30 @@ var ListSkillDev = function (_React$Component2) {
                 'div',
                 { className: 'dev-skills' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h3',
+                    'table',
                     null,
-                    skillType
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'ul',
-                    null,
-                    skills
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'thead',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'tr',
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'td',
+                                { colSpan: '3' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h3',
+                                    null,
+                                    skillType
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'tbody',
+                        null,
+                        skills
+                    )
                 )
             );
         }
@@ -26364,15 +26383,15 @@ var ListSkillLang = function (_React$Component3) {
         value: function render() {
             var langs = this.props.languages.map(function (lang) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'ul',
+                    'tr',
                     { key: lang.lang },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
+                        'td',
                         null,
                         lang.lang
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'li',
+                        'td',
                         null,
                         lang.level
                     )
@@ -26383,11 +26402,31 @@ var ListSkillLang = function (_React$Component3) {
                 'div',
                 { className: 'lang-skills' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h3',
+                    'table',
                     null,
-                    'Languages'
-                ),
-                langs
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'thead',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'tr',
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'td',
+                                { colSpan: '2' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h3',
+                                    null,
+                                    'Languages'
+                                )
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'tbody',
+                        null,
+                        langs
+                    )
+                )
             );
         }
     }]);

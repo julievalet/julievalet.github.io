@@ -8,12 +8,19 @@ import React from 'react';
 class StarLevel extends React.Component {
     render() {
         const level = this.props.level;
-        const starMap = level.map((star, index) => (star === 1 ? <i key={'star-' + index} className="material-icons">star</i> : <i key={'star-' + index} className="material-icons">star_border</i>));
-        return (
-            <span>
-                { starMap }
-            </span>
+        const starMap = level.map(
+            (star, index) =>
+                star === 1 ? (
+                    <i key={'star-' + index} className="material-icons">
+                        star
+                    </i>
+                ) : (
+                    <i key={'star-' + index} className="material-icons">
+                        star_border
+                    </i>
+                )
         );
+        return <span>{starMap}</span>;
     }
 }
 
@@ -26,19 +33,27 @@ export class ListSkillDev extends React.Component {
     render() {
         const skillType = this.props.skillType;
         const skills = this.props.skills.map(skill => (
-            <li key={skill.name}>
-                <span>{ skill.name }</span>
-                <StarLevel level={skill.level} />
-                <span>{ skill.time }</span>
-            </li>
+            <tr key={skill.name}>
+                <td>{skill.name}</td>
+                <td>
+                    <StarLevel level={skill.level} />
+                </td>
+                <td>{skill.time}</td>
+            </tr>
         ));
 
         return (
-            <div className="dev-skills" >
-                <h3>{ skillType }</h3>
-                <ul>
-                    { skills }
-                </ul>
+            <div className="dev-skills">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colSpan="3">
+                                <h3>{skillType}</h3>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>{skills}</tbody>
+                </table>
             </div>
         );
     }
@@ -52,18 +67,25 @@ export class ListSkillDev extends React.Component {
 export class ListSkillLang extends React.Component {
     render() {
         const langs = this.props.languages.map(lang => (
-            <ul key={lang.lang}>
-                <li>{ lang.lang }</li>
-                <li>{ lang.level }</li>
-            </ul>
+            <tr key={lang.lang}>
+                <td>{lang.lang}</td>
+                <td>{lang.level}</td>
+            </tr>
         ));
 
         return (
             <div className="lang-skills">
-                <h3>Languages</h3>
-                { langs }
+                <table>
+                    <thead>
+                        <tr>
+                            <td colSpan="2">
+                                <h3>Languages</h3>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>{langs}</tbody>
+                </table>
             </div>
         );
     }
 }
-

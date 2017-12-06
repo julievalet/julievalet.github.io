@@ -1,15 +1,20 @@
 html {
     overflow-y: scroll;
     font-size: 1.4em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 body {
     width: 100%;
     margin: 0;
-    color: #F4F4F4;
+    color: #f4f4f4;
     background: #222;
 }
-#app, #app > div {
+#app,
+#app > div {
     display: block;
     width: 100%;
 }
@@ -34,7 +39,7 @@ main {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 } */
-.cover{
+.cover {
     opacity: 0.5;
     position: fixed;
     bottom: 0;
@@ -52,11 +57,11 @@ main {
 
 a {
     text-decoration: none;
-    color: #F4F4F4;
+    color: #f4f4f4;
 }
 
 h3 {
-    font-variant-caps:  petite-caps;
+    font-variant-caps: petite-caps;
     font-weight: bold;
     text-align: center;
 }
@@ -64,11 +69,11 @@ h3 {
 footer {
     text-align: center;
     padding: 10px 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 0.6em;
 }
 
-footer ul.social {
+footer .social {
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -83,7 +88,7 @@ footer ul.social {
     padding: 0;
     text-align: center;
 }
-footer ul.social > li {
+footer .social > li {
     margin: 1em 0.5em;
     text-transform: capitalize;
 }
@@ -113,7 +118,12 @@ footer ul.social > li {
 }
 .btn.btn-instagram {
     background: #bd3381;
-    background-image: radial-gradient(at 70% 70%, #ee583f 8%, #d92d77 42%, #bd3381 58%);
+    background-image: radial-gradient(
+        at 70% 70%,
+        #ee583f 8%,
+        #d92d77 42%,
+        #bd3381 58%
+    );
 }
 
 header {
@@ -126,13 +136,12 @@ header {
 
 ul {
     list-style: none;
-    
 }
 nav a {
     color: inherit;
 }
 nav a:hover {
-    color: #0084B4;
+    color: #0084b4;
 }
 
 #menu {
@@ -167,19 +176,18 @@ nav a:hover {
     font-size: 1em;
 }
 
-.anchor-link { 
+.anchor-link {
     display: none;
-    padding: 0 1em 0; 
-    text-align: center; 
-    padding: 10px 15px;  
-    text-decoration: none; 
-    margin: 3px; 
-    
+    padding: 0 1em 0;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 3px;
 }
 .anchor-link#menu-toggle {
     float: right;
-    color: #fff; 
-    background-color: #0084B4;
+    color: #fff;
+    background-color: #0084b4;
     border-radius: 4px;
 }
 .anchor-link.item-logo {
@@ -259,17 +267,28 @@ nav a:hover {
 }
 
 #about h4 {
-    color: #0084B4;
+    color: #0084b4;
 }
 #about div.experience p {
     font-size: 0.6em;
+}
+
+#skills table {
+    margin: auto;
+    width: 80%;
+}
+#skills td {
+    padding: 5px 10px;
+}
+#skills tr:hover {
+    color: #0084b4;
 }
 
 #contact {
     text-align: center;
 }
 #contact a {
-    color: #0084B4;
+    color: #0084b4;
     font-weight: bold;
 }
 #contact a:hover {
@@ -277,17 +296,16 @@ nav a:hover {
 }
 
 /* Mobile Standards */
-@media (max-width: 768px){
-    
-    #menu { 
-        display: none; 
+@media (max-width: 768px) {
+    #menu {
+        display: none;
     }
-	.anchor-link { 
-        display: block; 
+    .anchor-link {
+        display: block;
     }
 
-    ul.open { 
-        background-color: #F4F4F4;
+    ul.open {
+        background-color: #f4f4f4;
         -webkit-box-shadow: 2px 2px 3px #444444;
                 box-shadow: 2px 2px 3px #444444;
         display: block !important;
@@ -298,23 +316,23 @@ nav a:hover {
         right: 3px;
         /* top: 5px; */
         width: 60%;
-        z-index: 500; 
-	}
-	ul.open li { 
-        display: block; 
-        list-style: none; 
-        text-align: center; 
+        z-index: 500;
     }
-	ul.open li a { 
-        display: block; 
-        padding: 20px 10px; 
-        border-bottom: 1px solid #222; 
+    ul.open li {
+        display: block;
+        list-style: none;
+        text-align: center;
+    }
+    ul.open li a {
+        display: block;
+        padding: 20px 10px;
+        border-bottom: 1px solid #222;
         text-decoration: none;
         color: #222;
     }
-    ul.open li a:hover { 
-        background-color: #222; 
-        color: #fff; 
+    ul.open li a:hover {
+        background-color: #222;
+        color: #fff;
     }
     ul.open li.item-logo {
         display: none;
@@ -334,8 +352,12 @@ nav a:hover {
         vertical-align: bottom;
         font-size: 1.1em;
     }
+
+    #skills table {
+        width: 100%;
+    }
 }
-@media (max-width: 480px){
+@media (max-width: 480px) {
     #intro > div {
         padding: 0;
     }
@@ -367,8 +389,18 @@ button#scroll-top-btn:hover {
     opacity: 1;
 }
 
-.material-icons { vertical-align: top; }
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons {
+    vertical-align: top;
+}
+.material-icons.md-18 {
+    font-size: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
