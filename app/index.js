@@ -4,7 +4,6 @@ import { App } from './components/App';
 import { Footer } from './components/Footer';
 // import { ListSkillDev, ListSkillLang } from './components/ListSkillDev';
 
-
 // Get the resume's data (JSON)
 const resumeJSONPath = './app/data_resume.json';
 // Render only when the data has been fetched
@@ -12,9 +11,15 @@ fetch(resumeJSONPath)
     .then(blob => blob.json())
     .then(data => {
         // console.log(data);
-        ReactDOM.render(<App resumeData={data} />, document.getElementById('app'));
+        ReactDOM.render(
+            <App resumeData={data} />,
+            document.getElementById('app')
+        );
 
-        ReactDOM.render(<Footer info={data.info} />, document.querySelector('footer'));
+        ReactDOM.render(
+            <Footer info={data.info} />,
+            document.querySelector('footer')
+        );
     })
     .catch(err => console.error(err));
 
@@ -45,7 +50,10 @@ function scrollToTop() {
 }
 
 function handleScroll() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+    ) {
         btnScrollTop.style.display = 'block';
     } else {
         btnScrollTop.style.display = 'none';

@@ -124,10 +124,10 @@
             "location" : "Levallois-Perret, France",
             "year" : "Nov. 2014 - Sept. 2017",
             "desc" : [
-                "Lead Developer of the Front and Back end of a repricing tool (minus repricing calculus).",
+                "Lead Developer of the Front and Back end of a repricing tool.",
                 "Maintenance and development of a pricing monitor web application. (PriceVeille)",
                 "Dynamic CSV and Excel reports generation with PHP, Graphs and Tables with Javascript.",
-                "Used Tech : AngularJS, jQPlot, Google Charts, DataTable, JSON, PHPExcel, Spreadsheet Excel Writer, PHP, MySQL (InnoDB), Javascript, jQuery"
+                "Used Tech : AngularJS, jQPlot, Google Charts, ChartJS, DataTable, JSON, PHPExcel, Spreadsheet Excel Writer, PHP, MySQL (InnoDB), Javascript, jQuery"
             ]
         },
         {
