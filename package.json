@@ -1,14 +1,13 @@
 {
     "name": "webresume",
     "version": "1.0.0",
+    "license": "ISC",
     "description": "old resume still up :\r http://julievalet.free.fr",
     "main": "src/index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/julievalet/web-resume.git"
     },
-    "author": "",
-    "license": "ISC",
     "bugs": {
         "url": "https://github.com/julievalet/web-resume/issues"
     },
@@ -16,7 +15,8 @@
     "dependencies": {
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
-        "react-scripts": "1.0.17"
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "^1.0.17"
     },
     "scripts": {
         "start": "react-scripts start",
