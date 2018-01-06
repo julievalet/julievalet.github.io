@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './components/App';
-import { Footer } from './components/Footer';
-// import { ListSkillDev, ListSkillLang } from './components/ListSkillDev';
+import App from './components/App';
+import Footer from './components/Footer';
 
 import data from './data-resume-en.js';
 import './css/style.css';

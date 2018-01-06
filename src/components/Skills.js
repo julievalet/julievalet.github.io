@@ -1,26 +1,52 @@
 import React from 'react';
-import { ListSkillDev, ListSkillLang } from './ListSkillDev';
-
+import StarLevel from './StarLevel';
 import PropTypes from 'prop-types';
 
 /**
  * Display the content of the 'Skills' menu
  * List of different skills with star-rating & time of practice
  */
-export class Skills extends React.Component {
-    render() {
-        // Dev skills
-        const skillTypes = this.props.skills.dev;
-        const listSkills = Object.keys(skillTypes).map(skillType => (
-            <ListSkillDev skillType={skillType} skills={skillTypes[skillType]} key={skillType} />
-        ));
-        // Lang skills
-        const langSkills = <ListSkillLang languages={this.props.skills.languages} key="lang" />;
+class Skills extends React.Component {
+    constructor() {
+        super();
 
+        this.renderDevSkills = this.renderDevSkills.bind(this);
+    }
+
+    renderDevSkills(skillType) {
+        const skills = this.props.skills.dev[skillType];
+
+        return (
+            <div className="dev-skills" key={skillType}>
+                <table>
+                    <thead>
+                        <tr>
+                            <td colSpan="3">
+                                <h3>{skillType}</h3>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {skills.map(skill => (
+                            <tr key={skill.name}>
+                                <td>{skill.name}</td>
+                                <td>
+                                    <StarLevel level={skill.level} />
+                                </td>
+                                <td>{skill.time}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        );
+    }
+
+    render() {
         return (
             <div id="skills">
                 <h3>Skills</h3>
-                {[langSkills, listSkills]}
+                {Object.keys(this.props.skills.dev).map(skillType => this.renderDevSkills(skillType))}
             </div>
         );
     }
@@ -29,3 +55,5 @@ export class Skills extends React.Component {
 Skills.propTypes = {
     skills: PropTypes.object.isRequired
 };
+
+export default Skills;

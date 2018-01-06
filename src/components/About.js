@@ -1,25 +1,15 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
-class Education extends React.Component {
-    render() {
-        const listEducation = this.props.data.map((item, index) => (
-            <li key={`educ-${index}`}>
-                <h5>{`${item.diploma} - ${item.location} - ${item.year}`}</h5>
-            </li>
-        ));
-        return <ul>{listEducation}</ul>;
+class About extends React.Component {
+    constructor() {
+        super();
+        this.renderExperience = this.renderExperience.bind(this);
+        this.renderEducation = this.renderEducation.bind(this);
     }
-}
 
-Education.propTypes = {
-    data: PropTypes.object.Required
-};
-
-class Experience extends React.Component {
-    render() {
-        const listXP = this.props.data.map((item, index) => (
+    renderExperience(workXP) {
+        return workXP.map((item, index) => (
             <li key={`xp-${index}`}>
                 <h5>
                     {item.title} - {item.companyName} - {item.location}
@@ -28,26 +18,27 @@ class Experience extends React.Component {
                 {item.desc.map((desc, i) => <p key={`desc-${i}`}>{desc}</p>)}
             </li>
         ));
-
-        return <ul>{listXP}</ul>;
     }
-}
 
-Experience.propTypes = {
-    data: PropTypes.object.Required
-};
-export class About extends React.Component {
+    renderEducation(education) {
+        return education.map((item, index) => (
+            <li key={`educ-${index}`}>
+                <h5>{`${item.diploma} - ${item.location} - ${item.year}`}</h5>
+            </li>
+        ));
+    }
+
     render() {
         return (
             <div id="about">
                 <h3>About</h3>
                 <div className="experience">
                     <h4>Experience</h4>
-                    <Experience data={this.props.data.workXP} />
+                    <ul>{this.renderExperience(this.props.workXP)}</ul>
                 </div>
                 <div className="education">
                     <h4>Education</h4>
-                    <Education data={this.props.data.education} />
+                    <ul>{this.renderEducation(this.props.education)}</ul>
                 </div>
             </div>
         );
@@ -55,5 +46,8 @@ export class About extends React.Component {
 }
 
 About.propTypes = {
-    data: PropTypes.object.Required
+    workXP: PropTypes.array.isRequired,
+    education: PropTypes.array.isRequired
 };
+
+export default About;
