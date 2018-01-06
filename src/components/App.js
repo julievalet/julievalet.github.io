@@ -24,6 +24,7 @@ class App extends React.Component {
                         <Route path="/skills" render={() => <Skills skills={resumeData.skills} />} />
                         <Route path="/work" render={() => <Work work={resumeData.workXP} />} />
                         <Route path="/contact" render={() => <Contact info={resumeData.info} />} />
+                        <Route render={() => <Intro info={resumeData.info} />} />
                     </Switch>
                 </div>
             </Router>

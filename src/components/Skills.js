@@ -42,11 +42,23 @@ class Skills extends React.Component {
         );
     }
 
+    renderOtherSkills(skillType) {
+        const skills = this.props.skills.other[skillType];
+
+        return (
+            <div className="dev-skills" key={skillType}>
+                <h3>{skillType}</h3>
+                {skills.join(', ')}
+            </div>
+        );
+    }
+
     render() {
         return (
             <div id="skills">
                 <h3>Skills</h3>
                 {Object.keys(this.props.skills.dev).map(skillType => this.renderDevSkills(skillType))}
+                {Object.keys(this.props.skills.other).map(skillType => this.renderOtherSkills(skillType))}
             </div>
         );
     }

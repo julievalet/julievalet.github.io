@@ -1,8 +1,8 @@
 html {
     overflow-y: scroll;
     font-size: 1.4em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+        sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -120,36 +120,11 @@ footer .social > li {
 }
 .btn.btn-instagram {
     background: #bd3381;
-    background-image: -webkit-radial-gradient(
-        at 70% 70%,
-        #ee583f 8%,
-        #d92d77 42%,
-        #bd3381 58%
-    );
-    background-image: -moz-radial-gradient(
-        at 70% 70%,
-        #ee583f 8%,
-        #d92d77 42%,
-        #bd3381 58%
-    );
-    background-image: -ms-radial-gradient(
-        at 70% 70%,
-        #ee583f 8%,
-        #d92d77 42%,
-        #bd3381 58%
-    );
-    background-image: -o-radial-gradient(
-        at 70% 70%,
-        #ee583f 8%,
-        #d92d77 42%,
-        #bd3381 58%
-    );
-    background-image: radial-gradient(
-        at 70% 70%,
-        #ee583f 8%,
-        #d92d77 42%,
-        #bd3381 58%
-    );
+    background-image: -webkit-radial-gradient(at 70% 70%, #ee583f 8%, #d92d77 42%, #bd3381 58%);
+    background-image: -moz-radial-gradient(at 70% 70%, #ee583f 8%, #d92d77 42%, #bd3381 58%);
+    background-image: -ms-radial-gradient(at 70% 70%, #ee583f 8%, #d92d77 42%, #bd3381 58%);
+    background-image: -o-radial-gradient(at 70% 70%, #ee583f 8%, #d92d77 42%, #bd3381 58%);
+    background-image: radial-gradient(at 70% 70%, #ee583f 8%, #d92d77 42%, #bd3381 58%);
 }
 
 header {
@@ -273,8 +248,15 @@ nav a:hover {
 #about h4 {
     color: #0084b4;
 }
+#about h5,
+#about h6 {
+    margin: 1em 0;
+}
 #about div.experience p {
     font-size: 0.6em;
+}
+#about div.experience li {
+    margin: 2em 0;
 }
 
 #skills table {
@@ -283,9 +265,13 @@ nav a:hover {
 }
 #skills td {
     padding: 5px 10px;
+    width: 33%;
 }
 #skills tr:hover {
     color: #0084b4;
+}
+#skills .dev-skills {
+    text-align: center;
 }
 
 #contact {

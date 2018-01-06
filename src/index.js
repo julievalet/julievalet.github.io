@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import App from './components/App';
 import Footer from './components/Footer';
 
@@ -19,8 +20,8 @@ import './index.css';
 //     })
 //     .catch(err => console.error(err));
 
-ReactDOM.render(<App resumeData={data} />, document.getElementById('app'));
-ReactDOM.render(<Footer info={data.info} />, document.querySelector('footer'));
+render(<App resumeData={data} />, document.getElementById('app'));
+render(<Footer info={data.info} />, document.querySelector('footer'));
 
 /* *************************************************************************** */
 /* *************************************************************************** */

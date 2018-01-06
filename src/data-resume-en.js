@@ -19,11 +19,9 @@ const resume = {
         languages: [{ lang: 'French', level: 'native' }, { lang: 'English', level: 'fluent' }],
         dev: {
             FrontEnd: [
-                { name: 'AngularJS', level: [1, 1, 1, 0, 0], time: '1+ years' },
                 { name: 'ReactJS', level: [1, 1, 0, 0, 0], time: '< 6 months' },
+                { name: 'AngularJS', level: [1, 1, 1, 0, 0], time: '1+ years' },
                 { name: 'jQuery', level: [1, 1, 1, 1, 0], time: '3+ years' },
-                { name: 'HTML5', level: [1, 1, 1, 1, 1], time: '3+ years' },
-                { name: 'CSS3', level: [1, 1, 1, 1, 0], time: '3+ years' },
                 { name: 'Bootstrap', level: [1, 1, 1, 1, 0], time: '2+ years' },
                 { name: 'Material', level: [1, 1, 0, 0, 0], time: '< 1 year' }
             ],
@@ -31,17 +29,10 @@ const resume = {
                 { name: 'NodeJS', level: [0, 0, 0, 0, 0], time: '< 6 months' },
                 { name: 'PHP', level: [1, 1, 1, 1, 1], time: '4+ years' },
                 { name: 'MySQL', level: [1, 1, 1, 1, 1], time: '4+ years' }
-            ],
-            Other: [
-                { name: 'JSON', level: [1, 1, 1, 1, 1], time: '3+ years' },
-                { name: 'Ajax', level: [1, 1, 1, 1, 0], time: '3+ years' },
-                { name: 'ChartJS', level: [1, 1, 1, 1, 0], time: '2+ years' },
-                { name: 'Google Charts', level: [1, 1, 1, 1, 0], time: '2+ years' },
-                { name: 'jQPlot', level: [1, 1, 1, 1, 0], time: '2+ years' },
-                { name: 'DataTable', level: [1, 1, 1, 0, 0], time: '3+ years' },
-                { name: 'Git', level: [1, 1, 1, 0, 0], time: '< 1 year' },
-                { name: 'Gulp', level: [1, 0, 0, 0, 0], time: '< 6 months' }
             ]
+        },
+        other: {
+            Other: ['JSON', 'Ajax', 'ChartJS', 'Google Charts', 'jQPlot', 'DataTable', 'Git', 'Gulp']
         }
     },
     education: [
@@ -118,7 +109,7 @@ const resume = {
             title: 'Web Application Developer',
             companyName: 'Net-Veille Systems',
             location: 'Levallois-Perret, France',
-            year: 'Nov. 2014 - Sept. 2017',
+            year: 'Nov. 2014 - Jan. 2018',
             desc: [
                 'Lead Developer of the Front and Back end of a repricing tool.',
                 'Maintenance and development of a pricing monitor web application. (PriceVeille)',
