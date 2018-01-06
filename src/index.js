@@ -4,7 +4,7 @@ import App from './components/App';
 import Footer from './components/Footer';
 
 import data from './data-resume-en.js';
-import './css/style.css';
+import './index.css';
 
 // // Get the resume's data (JSON)
 // const resumeJSONPath = './src/data_resume.json';
