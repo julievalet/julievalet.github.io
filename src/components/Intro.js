@@ -2,6 +2,8 @@ import React from 'react';
 
 import selfie from '../img/selfie.jpeg';
 
+import PropTypes from 'prop-types';
+
 /**
  * Display what the user see when he lands on the site (title, pic, location & availability)
  */
@@ -30,3 +32,7 @@ export class Intro extends React.Component {
         );
     }
 }
+
+Intro.propTypes = {
+    info: PropTypes.object.isRequired
+};

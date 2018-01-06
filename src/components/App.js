@@ -6,6 +6,8 @@ import { Skills } from './Skills';
 import { Work } from './Work';
 import { Contact } from './Contact';
 
+import PropTypes from 'prop-types';
+
 export class App extends React.Component {
     render() {
         const resumeData = this.props.resumeData; // All the data of the resume
@@ -25,3 +27,7 @@ export class App extends React.Component {
         );
     }
 }
+
+App.propTypes = {
+    resumeData: PropTypes.object.isRequired
+};

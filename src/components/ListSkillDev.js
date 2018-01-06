@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Star Rating Component
@@ -23,6 +24,10 @@ class StarLevel extends React.Component {
         return <span>{starMap}</span>;
     }
 }
+
+StarLevel.propTypes = {
+    level: PropTypes.array.isRequired
+};
 
 /**
  * List Dev Skills Component
@@ -59,6 +64,11 @@ export class ListSkillDev extends React.Component {
     }
 }
 
+ListSkillDev.propTypes = {
+    skillType: PropTypes.string.isRequired,
+    skills: PropTypes.array.isRequired
+};
+
 /**
  * List languages Component
  * props : languages (array)
@@ -89,3 +99,7 @@ export class ListSkillLang extends React.Component {
         );
     }
 }
+
+ListSkillLang.propTypes = {
+    languages: PropTypes.array.isRequired
+};
