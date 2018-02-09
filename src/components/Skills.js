@@ -1,6 +1,7 @@
 import React from 'react';
 import StarLevel from './StarLevel';
 import PropTypes from 'prop-types';
+import dico from '../lang/lang-en';
 
 /**
  * Display the content of the 'Skills' menu
@@ -56,7 +57,7 @@ class Skills extends React.Component {
     render() {
         return (
             <div id="skills">
-                <h3>Skills</h3>
+                <h3>{dico.skills}</h3>
                 {Object.keys(this.props.skills.dev).map(skillType => this.renderDevSkills(skillType))}
                 {Object.keys(this.props.skills.other).map(skillType => this.renderOtherSkills(skillType))}
             </div>

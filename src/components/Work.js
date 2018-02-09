@@ -1,10 +1,11 @@
 import React from 'react';
+import dico from '../lang/lang-en';
 
 class Work extends React.Component {
     render() {
         return (
             <div>
-                <h3>Work</h3>
+                <h3>{dico.work}</h3>
             </div>
         );
     }

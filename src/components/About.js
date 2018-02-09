@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import dico from '../lang/lang-en';
 
 class About extends React.Component {
     constructor() {
@@ -31,16 +32,16 @@ class About extends React.Component {
     render() {
         return (
             <div id="about">
-                <h3>About</h3>
+                <h3>{dico.about}</h3>
                 <div className="about-me">
                     <p>{this.props.about}</p>
                 </div>
                 <div className="experience">
-                    <h4>Experience</h4>
+                    <h4>{dico.experience}</h4>
                     <ul>{this.renderExperience(this.props.workXP)}</ul>
                 </div>
                 <div className="education">
-                    <h4>Education</h4>
+                    <h4>{dico.education}</h4>
                     <ul>{this.renderEducation(this.props.education)}</ul>
                 </div>
             </div>
