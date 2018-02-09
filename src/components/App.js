@@ -19,7 +19,13 @@ class App extends React.Component {
                         <Route exact path="/" render={() => <Intro info={resumeData.info} />} />
                         <Route
                             path="/about"
-                            render={() => <About workXP={resumeData.workXP} education={resumeData.education} />}
+                            render={() => (
+                                <About
+                                    about={resumeData.info.about}
+                                    workXP={resumeData.workXP}
+                                    education={resumeData.education}
+                                />
+                            )}
                         />
                         <Route path="/skills" render={() => <Skills skills={resumeData.skills} />} />
                         <Route path="/work" render={() => <Work work={resumeData.workXP} />} />

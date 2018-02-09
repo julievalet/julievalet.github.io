@@ -32,6 +32,9 @@ class About extends React.Component {
         return (
             <div id="about">
                 <h3>About</h3>
+                <div className="about-me">
+                    <p>{this.props.about}</p>
+                </div>
                 <div className="experience">
                     <h4>Experience</h4>
                     <ul>{this.renderExperience(this.props.workXP)}</ul>
@@ -46,6 +49,7 @@ class About extends React.Component {
 }
 
 About.propTypes = {
+    about: PropTypes.string.isRequired,
     workXP: PropTypes.array.isRequired,
     education: PropTypes.array.isRequired
 };

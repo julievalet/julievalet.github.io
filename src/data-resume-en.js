@@ -13,7 +13,8 @@ const resume = {
             { name: 'instagram', link: 'https://instagram.com/_u/canyoutraveltheworld/' }
         ],
         available: 'Right away',
-        about: ''
+        about:
+            "Hello there, I'm Julie. I've been passionate about new technology since I can remember and started learning code in High School. I'm always up for a new challenge, that's why I moved to Canada a few months ago and I have been learning new stuff every day since I got here. For example, this little website you're currently on is built with ReactJS using ES6. I made it so I could apply my new skills on a concrete and useful project. If you'd like to know more about my journey in the coding world, email me or checkout the rest of the site. Thanks for stopping by and I look forward to hearing from you."
     },
     skills: {
         languages: [{ lang: 'French', level: 'native' }, { lang: 'English', level: 'fluent' }],
