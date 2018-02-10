@@ -1,5 +1,5 @@
 import React from 'react';
-import dico from '../lang/lang-en';
+import dico from '../lang/lang-multi';
 
 class Work extends React.Component {
     render() {

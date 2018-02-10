@@ -1,7 +1,7 @@
 import React from 'react';
 import StarLevel from './StarLevel';
 import PropTypes from 'prop-types';
-import dico from '../lang/lang-en';
+import dico from '../lang/lang-multi';
 
 /**
  * Display the content of the 'Skills' menu

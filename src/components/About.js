@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import dico from '../lang/lang-en';
+import dico from '../lang/lang-multi';
 
 class About extends React.Component {
     constructor() {
