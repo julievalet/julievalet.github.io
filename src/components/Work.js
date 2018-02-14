@@ -1,14 +1,14 @@
 import React from 'react';
-import dico from '../lang/lang-multi';
+import Dico from '../lang/lang-multi';
 
-class Work extends React.Component {
-    render() {
-        return (
-            <div>
-                <h3>{dico.work}</h3>
-            </div>
-        );
-    }
-}
+const Work = props => {
+    const lang = props.lang;
+    const dico = Dico[lang];
+    return (
+        <div className="main">
+            <h3>{dico.work}</h3>
+        </div>
+    );
+};
 
 export default Work;

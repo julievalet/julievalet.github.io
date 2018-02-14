@@ -17,4 +17,4 @@ const dico = {
     }
 };
 
-export default dico.fr;
+export default dico;

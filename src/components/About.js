@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import dico from '../lang/lang-multi';
+import Dico from '../lang/lang-multi';
 
 class About extends React.Component {
     constructor() {
@@ -30,8 +30,10 @@ class About extends React.Component {
     }
 
     render() {
+        const lang = this.props.lang;
+        const dico = Dico[lang];
         return (
-            <div id="about">
+            <div className="main" id="about">
                 <h3>{dico.about}</h3>
                 <div className="about-me">
                     <p>{this.props.about}</p>

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
  */
 const Intro = props => {
     return (
-        <div id="intro">
+        <div className="main" id="intro">
             <div>
                 <div className="title">
                     {props.info.title.split(' ').map((t, i) => <span key={i}>{t}</span>)}
@@ -20,10 +20,6 @@ const Intro = props => {
                     <img src={selfie} alt="pic" />
                 </div>
             </div>
-            {/* <div>
-                    <i className="material-icons">location_on</i>{ props.info.location }<br/>
-                    Available : { props.info.available }
-                </div> */}
         </div>
     );
 };

@@ -2,28 +2,10 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 import { render } from 'react-snapshot';
 import App from './components/App';
-import Footer from './components/Footer';
-import Header from './components/Header';
 
-import data from './data-resume-en.js';
 import './index.css';
 
-// // Get the resume's data (JSON)
-// const resumeJSONPath = './src/data_resume.json';
-// // Render only when the data has been fetched
-// fetch(resumeJSONPath)
-//     .then(blob => blob.json())
-//     .then(data => {
-//         // console.log(data);
-//         ReactDOM.render(<App resumeData={data} />, document.getElementById('app'));
-
-//         ReactDOM.render(<Footer info={data.info} />, document.querySelector('footer'));
-//     })
-//     .catch(err => console.error(err));
-
-render(<Header info={data.info} />, document.querySelector('header'));
-render(<App resumeData={data} />, document.getElementById('app'));
-render(<Footer info={data.info} />, document.querySelector('footer'));
+render(<App />, document.querySelector('#app'));
 
 /* *************************************************************************** */
 /* *************************************************************************** */

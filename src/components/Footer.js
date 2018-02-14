@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Footer = props => {
     return (
-        <div>
+        <div id="footer">
             <ul className="social">
                 {props.info.social.map(social => (
                     <li key={`link-${social.name}`}>
