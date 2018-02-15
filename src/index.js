@@ -17,7 +17,8 @@ const anchorMenu = document.querySelector('#menu-toggle');
 const btnScrollTop = document.querySelector('#scroll-top-btn');
 
 /* Functions */
-function toggleMenu() {
+function toggleMenu(e) {
+    e.stopPropagation();
     // Toggle the class 'open', open/close the menu on mobile
     menu.classList.toggle('open');
 
@@ -45,3 +46,7 @@ function handleScroll() {
 anchorMenu.addEventListener('click', toggleMenu);
 btnScrollTop.addEventListener('click', scrollToTop);
 window.addEventListener('scroll', handleScroll);
+window.addEventListener('click', function() {
+    // Close the menu if it's open
+    if (menu.classList.contains('open')) menu.classList.remove('open');
+});
