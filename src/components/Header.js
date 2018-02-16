@@ -12,9 +12,13 @@ const Header = props => {
                 {`${props.info.firstname} ${props.info.lastname}`}
             </Link>
             <div className="item-lang anchor-link">
-                <a onClick={() => props.changeLang('fr')}>FR</a>
+                <span className="button" onClick={() => props.changeLang('fr')}>
+                    FR
+                </span>
                 |
-                <a onClick={() => props.changeLang('en')}>EN</a>
+                <span className="button" onClick={() => props.changeLang('en')}>
+                    EN
+                </span>
             </div>
             <a id="menu-toggle" className="anchor-link">
                 <i className="material-icons">menu</i>
@@ -36,9 +40,13 @@ const Header = props => {
                     <Link to="/contact">{dico.contact}</Link>
                 </li>
                 <li className="item item-lang">
-                    <a onClick={() => props.changeLang('fr')}>FR</a>
+                    <span className="button" onClick={() => props.changeLang('fr')}>
+                        FR
+                    </span>
                     |
-                    <a onClick={() => props.changeLang('en')}>EN</a>
+                    <span className="button" onClick={() => props.changeLang('en')}>
+                        EN
+                    </span>
                 </li>
             </ul>
         </nav>

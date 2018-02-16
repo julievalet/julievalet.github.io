@@ -107,10 +107,15 @@ h3 {
 ul {
     list-style: none;
 }
-nav a {
+nav .button {
+    cursor: pointer;
+}
+nav a,
+nav .button {
     color: inherit;
 }
-nav a:hover {
+nav a:hover,
+nav .button:hover {
     color: #0084b4;
 }
 
