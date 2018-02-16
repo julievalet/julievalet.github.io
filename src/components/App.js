@@ -52,6 +52,7 @@ class App extends React.Component {
                                     about={resumeData.info.about}
                                     workXP={resumeData.workXP}
                                     education={resumeData.education}
+                                    onlineEd={resumeData.onlineCourses}
                                 />
                             )}
                         />

@@ -3,6 +3,7 @@ const dico = {
         about: 'About',
         experience: 'Experience',
         education: 'Education',
+        onlineEd: 'Online Education',
         contact: 'Contact',
         skills: 'Skills',
         work: 'Projects'
@@ -11,6 +12,7 @@ const dico = {
         about: 'À Propos',
         experience: 'Expérience',
         education: 'Éducation',
+        onlineEd: 'Éducation en Ligne',
         contact: 'Contact',
         skills: 'Compétences',
         work: 'Projets'

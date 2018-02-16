@@ -7,6 +7,7 @@ class About extends React.Component {
         super();
         this.renderExperience = this.renderExperience.bind(this);
         this.renderEducation = this.renderEducation.bind(this);
+        this.renderOnlineEd = this.renderOnlineEd.bind(this);
     }
 
     renderExperience(workXP) {
@@ -29,6 +30,14 @@ class About extends React.Component {
         ));
     }
 
+    renderOnlineEd(courses) {
+        return courses.map((item, index) => (
+            <li key={`online-${index}`}>
+                <a href={item.url} target="_blank">{`${item.name} - ${item.author}`}</a>
+            </li>
+        ));
+    }
+
     render() {
         const lang = this.props.lang;
         const dico = Dico[lang];
@@ -45,6 +54,10 @@ class About extends React.Component {
                 <div className="education">
                     <h4>{dico.education}</h4>
                     <ul>{this.renderEducation(this.props.education)}</ul>
+                </div>
+                <div className="online-education">
+                    <h4>{dico.onlineEd}</h4>
+                    <ul>{this.renderOnlineEd(this.props.onlineEd)}</ul>
                 </div>
             </div>
         );

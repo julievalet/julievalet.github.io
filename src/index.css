@@ -238,6 +238,12 @@ nav .button:hover {
 #about div.experience li {
     margin: 2em 0;
 }
+#about .online-education a {
+    font-size: 0.9em;
+}
+#about .online-education a:hover {
+    color: #0084b4;
+}
 
 #skills table {
     margin: auto;
