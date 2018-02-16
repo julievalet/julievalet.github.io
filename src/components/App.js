@@ -63,7 +63,7 @@ class App extends React.Component {
                         <Route
                             exact
                             path="/work"
-                            render={() => <Work lang={this.state.lang} work={resumeData.workXP} />}
+                            render={() => <Work lang={this.state.lang} portfolio={resumeData.portfolio} />}
                         />
                         <Route
                             exact

@@ -254,6 +254,56 @@ nav .button:hover {
     text-align: center;
 }
 
+#portfolio .portfolio-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#portfolio .portfolio-example-item {
+    max-width: 50%;
+    height: 400px;
+    padding: 3px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px #0084b4;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+#portfolio .portfolio-example-item:hover {
+    box-shadow: 0px 0px 6px 3px #0084b4;
+}
+#portfolio .portfolio-example-item > * {
+    flex-grow: 1;
+}
+#portfolio .portfolio-example-medias {
+    flex-grow: 3;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#portfolio .portfolio-example-img {
+    min-width: 0%;
+}
+#portfolio .portfolio-example-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#portfolio .portfolio-example-title {
+    font-size: 1em;
+    margin: 10px 10px;
+}
+#portfolio .portfolio-example-desc {
+    font-size: 0.7em;
+    margin: 5px 10px;
+}
+#portfolio .portfolio-example-tech {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 10px;
+}
+
 #contact {
     text-align: center;
 }

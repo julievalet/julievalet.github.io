@@ -15,7 +15,7 @@ const data = {
             ],
             available: 'Right away',
             about:
-                "Hello there, I'm Julie. I've been passionate about new technology since I can remember and started learning code in High School. I'm always up for a new challenge, that's why I moved to Canada a few months ago. I have been learning new things every day since I moved here. For example, this little website you're currently on is built with ReactJS using ES6. I made it so I could apply my new skills on a concrete and useful project. If you'd like to know more about my journey in the coding world, email me or checkout the rest of the site. Thanks for stopping by, looking forward to hear from you."
+                "Hello there, I'm Julie. I've been passionate about new technology since I can remember and started learning code in High School. I'm always up for a new challenge, that's why I moved to Canada a few months ago (with a work permit). I have been learning new things every day since I moved here. For example, this little website you're currently on is built with ReactJS using ES6. I made it so I could apply my new skills on a concrete and useful project. If you'd like to know more about my journey in the coding world, email me or checkout the rest of the site. Thanks for stopping by, looking forward to hear from you."
         },
         skills: {
             languages: [{ lang: 'French', level: 'native' }, { lang: 'English', level: 'fluent' }],
@@ -59,6 +59,25 @@ const data = {
                 year: '2009'
             }
         ],
+        portfolio: [
+            {
+                title: 'Social Scroller',
+                desc: 'Marketing Tool - Display of social media mentions revolving around a brand',
+                tech: 'PHP, AngularJS, ChartJS Bootstrap, Material',
+                medias: [
+                    {
+                        link: 'https://cl.ly/1A3e1J431P0x',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/2b3M3p3T2S3Z1E1f0L35/Screen%20Recording%202018-02-16%20at%2003.27%20PM.gif'
+                    },
+                    {
+                        link: 'https://cl.ly/123d0C3X2K2v',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/0G2C020W1P402d0w3L27/Screen%20Recording%202018-02-16%20at%2003.28%20PM.gif'
+                    }
+                ]
+            }
+        ],
         onlineCourses: [
             {
                 name: 'ES6 for Everyone',
@@ -67,7 +86,7 @@ const data = {
             },
             {
                 name: 'Learn ReactJS: Part I & II',
-                author: 'Wes Bos',
+                author: 'Code Academy',
                 url: 'https://www.codecademy.com/learn/react-101'
             },
             {
@@ -215,6 +234,25 @@ const data = {
                 year: '2009'
             }
         ],
+        portfolio: [
+            {
+                title: 'Social Scroller',
+                desc: "Outil Marketing - Montre l'étendu de ce qu'il se dit sur une marque",
+                tech: 'PHP, AngularJS, ChartJS, Bootstrap, Material',
+                medias: [
+                    {
+                        link: 'https://cl.ly/1A3e1J431P0x',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/2b3M3p3T2S3Z1E1f0L35/Screen%20Recording%202018-02-16%20at%2003.27%20PM.gif'
+                    },
+                    {
+                        link: 'https://cl.ly/123d0C3X2K2v',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/0G2C020W1P402d0w3L27/Screen%20Recording%202018-02-16%20at%2003.28%20PM.gif'
+                    }
+                ]
+            }
+        ],
         onlineCourses: [
             {
                 name: 'ES6 for Everyone',
@@ -223,7 +261,7 @@ const data = {
             },
             {
                 name: 'Learn ReactJS: Part I & II',
-                author: 'Wes Bos',
+                author: 'Code Academy',
                 url: 'https://www.codecademy.com/learn/react-101'
             },
             {

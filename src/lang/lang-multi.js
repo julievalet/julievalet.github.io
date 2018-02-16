@@ -5,7 +5,7 @@ const dico = {
         education: 'Education',
         contact: 'Contact',
         skills: 'Skills',
-        work: 'Work'
+        work: 'Projects'
     },
     fr: {
         about: 'À Propos',
