@@ -9,6 +9,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 import data from '../data-resume.js';
+import { setCookie, checkCookieLang } from '../helpers';
 
 class App extends React.Component {
     constructor() {
@@ -20,14 +21,20 @@ class App extends React.Component {
     }
 
     componentWillMount() {
+        // Get the user's preferred language
+        const userLang = checkCookieLang();
+
         // Get data in correct language
-        this.setState({ data: data[this.state.lang] });
+        this.setState({ lang: userLang, data: data[userLang] });
     }
 
     changeLang(lang) {
-        // Change language of app
         // console.log('switch lang to ->', lang);
+
+        // Change language of app
         this.setState({ lang: lang, data: data[lang] });
+        // Update Cookie
+        setCookie('lang', lang, 365);
     }
 
     render() {
