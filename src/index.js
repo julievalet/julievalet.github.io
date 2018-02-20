@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from 'react-snapshot';
 import App from './components/App';
 
-import './index.css';
+import './css/index.css';
 
 render(<App />, document.querySelector('#app'));
 
