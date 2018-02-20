@@ -62,7 +62,7 @@ const data = {
         portfolio: [
             {
                 title: 'Social Scroller',
-                desc: 'Marketing Tool - Display of social media mentions revolving around a brand',
+                desc: 'Marketing Tool - Social Media Analytic Solution for Brands',
                 tech: 'PHP, AngularJS, ChartJS Bootstrap, Material',
                 medias: [
                     {
@@ -74,6 +74,28 @@ const data = {
                         link: 'https://cl.ly/123d0C3X2K2v',
                         src:
                             'https://d2ffutrenqvap3.cloudfront.net/items/0G2C020W1P402d0w3L27/Screen%20Recording%202018-02-16%20at%2003.28%20PM.gif'
+                    }
+                ]
+            },
+            {
+                title: 'Price Veille',
+                desc: 'Pricing Tool - Price Analytic Solution for Businesses (B2B)',
+                tech: 'PHP, Javascript (JQuery), DataTables',
+                medias: [
+                    {
+                        link: 'https://cl.ly/1F3G0V2z0O3S',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/3S1A3w423a2h0I173t3E/Image%202018-02-20%20at%2012.30.52%20PM.png'
+                    },
+                    {
+                        link: 'https://cl.ly/1F3t1Z3h2q0q',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/3y2S3h3K021p0Q0L0D1a/Image%202018-02-20%20at%2012.32.53%20PM.png'
+                    },
+                    {
+                        link: 'https://cl.ly/2x3y1h1v0f0S',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/2X1K1x1r0Y0r2a0c2p3D/Screen%20Recording%202018-02-20%20at%2012.27%20PM.gif'
                     }
                 ]
             }
