@@ -116,16 +116,16 @@ const data = {
                 author: 'Wes Bos',
                 url: 'https://reactforbeginners.com/'
             },
-            {
-                name: 'Learn Redux',
-                author: 'Wes Bos',
-                url: 'https://learnredux.com/'
-            },
-            {
-                name: 'Learn Node',
-                author: 'Wes Bos',
-                url: 'https://learnnode.com/'
-            },
+            // {
+            //     name: 'Learn Redux',
+            //     author: 'Wes Bos',
+            //     url: 'https://learnredux.com/'
+            // },
+            // {
+            //     name: 'Learn Node',
+            //     author: 'Wes Bos',
+            //     url: 'https://learnnode.com/'
+            // },
             {
                 name: 'Javascript30',
                 author: 'Wes Bos',
@@ -237,7 +237,7 @@ const data = {
         education: [
             {
                 diploma: 'Licence Professionnelle en Multimédia',
-                location: 'University of Technology of Reims, France',
+                location: 'Institut Universitaire et Technologique de Reims, France',
                 year: '2014'
             },
             {
@@ -247,7 +247,7 @@ const data = {
             },
             {
                 diploma: 'Diplôme Universitaire et Technologique en Informatique',
-                location: "Institut Universitaire de Technologie d'Amiens, France",
+                location: "Institut Universitaire et Technologique d'Amiens, France",
                 year: '2011'
             },
             {
@@ -313,16 +313,16 @@ const data = {
                 author: 'Wes Bos',
                 url: 'https://reactforbeginners.com/'
             },
-            {
-                name: 'Learn Redux',
-                author: 'Wes Bos',
-                url: 'https://learnredux.com/'
-            },
-            {
-                name: 'Learn Node',
-                author: 'Wes Bos',
-                url: 'https://learnnode.com/'
-            },
+            // {
+            //     name: 'Learn Redux',
+            //     author: 'Wes Bos',
+            //     url: 'https://learnredux.com/'
+            // },
+            // {
+            //     name: 'Learn Node',
+            //     author: 'Wes Bos',
+            //     url: 'https://learnnode.com/'
+            // },
             {
                 name: 'Javascript30',
                 author: 'Wes Bos',
