@@ -98,6 +98,23 @@ const data = {
                             'https://d2ffutrenqvap3.cloudfront.net/items/2X1K1x1r0Y0r2a0c2p3D/Screen%20Recording%202018-02-20%20at%2012.27%20PM.gif'
                     }
                 ]
+            },
+            {
+                title: 'Price Veille (Matching)',
+                desc: 'Matching Tool - Solution for the user to bring closer similar products for analysis',
+                tech: 'PHP, AngularJS',
+                medias: [
+                    {
+                        link: 'https://cl.ly/0B1a0n1x2p1W',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/1P003J34083F2c351A1y/Screen%20Recording%202018-02-22%20at%2001.33%20PM.gif'
+                    },
+                    {
+                        link: 'https://cl.ly/042j0W262M1p',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/351J0p1I1d1d3b0d0W0Y/Screen%20Recording%202018-02-22%20at%2001.35%20PM.gif'
+                    }
+                ]
             }
         ],
         onlineCourses: [
@@ -168,7 +185,7 @@ const data = {
                 desc: [
                     'Media Asset Manager application development (PHP, HTML5, CSS3)',
                     'SQL Data Base development',
-                    'Integration of the solution into an Avid environment (ISIS, Interplay AirSpeedâ€‹â€‹)'
+                    'Integration of the solution into an Avid environment (ISIS, Interplay AirSpeed)'
                 ]
             },
             {
@@ -212,7 +229,7 @@ const data = {
             ],
             available: 'Tout de suite',
             about:
-                "Salut, c'est moi : Julie. Je suis passionnée de nouvelles technologies depuis de nombreuses années et j'ai commencé à coder au lycée. Je suis toujours prête pour de nouveaux challenges, c'est pourquoi j'ai déménagé au Canada il y a quelques mois et j'apprends de nouvelles choses tous les jours depuis que je suis arrivée. Par exemple, ce site sur lequel vous naviguez est développé en ReactJS en utilisant Javascript ES6. Je l'ai développé pour mettre en pratique mes nouvelles connaissances sur un projet concret et utile. Si vous voulez qu'on discute plus en détails de mon parcours, contactez-moi par courriel ou baladez-vous sur le reste du site. En espérant avoir de vos nouvelles, à bientôt."
+                "Salut, c'est moi : Julie. Je suis passionnée de nouvelles technologies depuis de nombreuses années et j'ai commencé à coder au lycée. Je suis toujours prête pour de nouveaux challenges, c'est pourquoi j'ai déménagé au Canada il y a quelques mois (avec un permis de travail). J'apprends de nouvelles choses tous les jours depuis que je suis arrivée. Par exemple, ce site sur lequel vous naviguez est développé en ReactJS en utilisant Javascript ES6. Je l'ai développé pour mettre en pratique mes nouvelles connaissances sur un projet concret et utile. Si vous voulez qu'on discute plus en détails de mon parcours, contactez-moi par courriel ou baladez-vous sur le reste du site. Merci pour votre temps et en espérant avoir de vos nouvelles, à bientôt."
         },
         skills: {
             languages: [{ lang: 'Français', level: 'natif' }, { lang: 'Anglais', level: 'courant' }],
@@ -293,6 +310,24 @@ const data = {
                         link: 'https://cl.ly/2x3y1h1v0f0S',
                         src:
                             'https://d2ffutrenqvap3.cloudfront.net/items/2X1K1x1r0Y0r2a0c2p3D/Screen%20Recording%202018-02-20%20at%2012.27%20PM.gif'
+                    }
+                ]
+            },
+            {
+                title: 'Price Veille (Matching)',
+                desc:
+                    "Outil de Matching - Solution premettant à l'utilisateur de rapprocher des produits similaires pour analyse",
+                tech: 'PHP, AngularJS',
+                medias: [
+                    {
+                        link: 'https://cl.ly/0B1a0n1x2p1W',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/1P003J34083F2c351A1y/Screen%20Recording%202018-02-22%20at%2001.33%20PM.gif'
+                    },
+                    {
+                        link: 'https://cl.ly/042j0W262M1p',
+                        src:
+                            'https://d2ffutrenqvap3.cloudfront.net/items/351J0p1I1d1d3b0d0W0Y/Screen%20Recording%202018-02-22%20at%2001.35%20PM.gif'
                     }
                 ]
             }
